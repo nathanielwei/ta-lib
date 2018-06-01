@@ -34,6 +34,21 @@ $ python setup.py install
 ```
 
 ### Troubleshooting
+Sometimes installation will produce errors like this (on Ubuntu 16.04):
+```
+Command "/home/<username>/anaconda3/bin/python -u -c "import setuptools, tokenize;__file__='/tmp/pip-install-21hndlhq/TA-Lib/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record /tmp/pip-record-tc5_ckc_/install-record.txt --single-version-externally-managed --compile" failed with error code 1 in /tmp/pip-install-21hndlhq/TA-Lib/
+
+```
+```
+wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz
+tar -xzf ta-lib-0.4.0-src.tar.gz
+cd ta-lib/
+./configure
+make
+sudo make install
+sudo pip3 install numpy
+sudo pip3 install TA-Lib
+```
 
 Sometimes installation will produce build errors like this:
 
